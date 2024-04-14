@@ -1,0 +1,11 @@
+/* Styles pour la page d'accueil de votre Instameme */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Répartir l'espace entre les éléments */
+}
+
+.home .content {
+    width: 30%; /* Définir la largeur de chaque élément pour obtenir trois éléments par ligne */
+    margin-bottom: 20px; /* Ajouter une marge inférieure pour l'espacement entre les lignes */
+}

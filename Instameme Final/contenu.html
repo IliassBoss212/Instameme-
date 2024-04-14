@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de Contenu - Instameme</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+		        body 
+		{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+		
+		
+		
+
+
+
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        #search-form {
+            display: flex;
+        }
+
+        #search-form input {
+            padding: 5px;
+        }
+
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+		
+
+        .content-item {
+            margin: 10px;
+            max-width: 30%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .content-item:hover {
+            transform: scale(1.05);
+        }
+
+        .content-item img {
+            width: 30%;
+            height: 30%;
+        }
+
+        .content-details {
+            padding: 10px;
+        }
+
+        .content-actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        
+        .create-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #content-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #content-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #content-form input,
+        #content-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        #content-form button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <nav>
+        
+		<img src="logo.jpg" alt="logo istameme">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+        </ul>
+		
+        <form id="search-form">
+            <input type="text" placeholder="Recherche">
+            <button type="submit">Rechercher</button>
+        </form>
+		<ul>
+            
+            <li><a href="contenu.html">Créer</a></li>
+            <li><a href="romain.html">Profil</a></li>
+        </ul>
+    </nav>
+	</header>
+
+    <div class="create-content">
+        <h2>Création de Contenu</h2>
+        <form id="content-form">
+            <label for="image">Sélectionner une image :</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <label for="description">Description :</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Publier</button>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>
